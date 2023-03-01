@@ -1,3 +1,5 @@
+// Author: Nick Rupley
+// Resolving the issue of recovering attachments for reprocessing messages in Mirth Connect Versions <= 3.12
 // Workaround until this is done better in Mirth Connect
 function getOriginalAttachments(base64Decode) {
 	if ($('reprocessed') == true) {
