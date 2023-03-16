@@ -1,5 +1,5 @@
 # Mirth-Connect
-Mirth Connect Channels and Sample HL7 Messages
+Mirth Connect Scripts and Sample HL7 Messages
 
 
 Useful Mirth Connect Things
