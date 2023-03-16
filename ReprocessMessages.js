@@ -18,7 +18,6 @@ function reprocessMessages(channeLId, filter, replace, metadataIds) {
         metadataIds = metadataIds || null; //Optional
         var messageController = com.mirth.connect.server.controllers.MessageController.getInstance();
         try {
-                if (connectorMessage.getMessageId() == 22) {
                         var executor = java.util.concurrent.Executors.newFixedThreadPool(1);
                         var task = new java.util.concurrent.Callable({
                                 call: function () {
@@ -33,8 +32,10 @@ function reprocessMessages(channeLId, filter, replace, metadataIds) {
                         });
                         var future = executor.submit(task);
                         executor.shutdown();
-                }
+                
         } catch (e) {
                 logger.error(e)
         }
 }
+
+reprocessMessages(channelId, simpleFilter, replaceMsg, null);
