@@ -1,3 +1,5 @@
+/* Still in progress */
+
 // Get a reference to the Mirth Connect server
 var server = Packages.com.mirth.connect.server.controllers.ControllerFactory.getFactory().createController();
 
@@ -32,7 +34,7 @@ for (var i = 0; i < channels.size(); i++) {
 // For example, log them to the Mirth Connect log
 if (erroredMessages.length > 0) {
   for (var i = 0; i < erroredMessages.length; i++) {
-    var message = erroredMessages[i];
+    var  message = erroredMessages[i];
     logger.error("Errored message found in channel " + message.getChannelName() + " with ID " + message.getMessageId());
   }
 }
