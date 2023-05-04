@@ -1,6 +1,8 @@
 /*
 Note that this example assumes that the kafka-clients.jar library is in custom-lib and may 
 need to be modified to work with your specific Kafka deployment and use case.
+
+https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
 */
 
 var props = new Packages.java.util.Properties();
